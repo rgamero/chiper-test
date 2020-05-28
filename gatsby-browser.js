@@ -4,4 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+import React from "react"
+import ReactDOM from "react-dom"
+import AppProvider from "./src/context"
+import { loadableReady } from "@loadable/component"
+
+export const replaceHydrateFunction = () => {
+  return (element, container, callback) => {
+    loadableReady(() => {
+      ReactDOM.render(element, container, callback)
+    })
+  }
+}
+
+export const wrapRootElement = ({ element }) => (
+  <AppProvider>{element}</AppProvider>
+)

@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#ff0136`,
         theme_color: `#ff0136`,
         display: `minimal-ui`,
-        icon: `src/images/logoChiper.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logoChiper.png`, // This path is relative to the root of the site.
       },
     },
     {

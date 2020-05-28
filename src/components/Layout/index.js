@@ -10,24 +10,25 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 
-import Header from './header';
+import GlobalStyle from './globalStyle';
+import Header from '../Shared/Header';
 import './layout.css';
 
 const Layout = ({ children }) => {
   const websiteTheme = {
     fontRegular: 'Avenir',
     fontBold: 'Avenir Black',
-    fontColor: '#4a4a4a',
+    fontColor: '#363636',
+    baseColor: '#f7f4f4',
     primaryColor: '#ff0136',
     gray: '#e6e6e6',
     gray2: '#b0b0b0',
     gray3: '#c4c4c4',
     white: '#fff',
-    base: '#c4c4c4',
     orange: '#ff765f',
     fontSize: {
-      xs: '1.6rem',
-      sm: '2rem',
+      xs: '1.4rem',
+      sm: '2.5rem',
       md: '3.5rem',
       lg: '5rem',
     },
@@ -45,7 +46,8 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={websiteTheme}>
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <GlobalStyle />
+        <Header />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

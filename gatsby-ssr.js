@@ -4,7 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-import * as React from "react"
-import { MediaContextProvider } from "./src/utils/MediaQueriesUtils"
+import * as React from 'react';
 
-export const wrapRootElement = ({ element }) => ({ element })
+import AppProvider from './src/context';
+import { MediaContextProvider } from './src/utils/mediaQueriesUtils';
+
+export const wrapRootElement = ({ element }) => (
+  <AppProvider>{element}</AppProvider>
+);

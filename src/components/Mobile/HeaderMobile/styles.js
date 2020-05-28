@@ -8,33 +8,7 @@ export const HeaderWrapper = styled.header`
   position: relative;
 `;
 
-export const HeaderBg = styled.a`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 1.5rem 1rem;
-  width: 100%;
-  border-radius: 16px;
-  background-color: hsla(0, 0%, 61.6%, 0.15);
-  ${StyledComponentMedia.tablet`
-    padding: 1.5rem 2rem;
-  `};
-  ${StyledComponentMedia.desktop`
-    padding: 2rem 4rem;
-  `};
-`;
-
-export const HeaderContent = styled.div`
-  display: flex;
-  align-items: center;
-  flex: 1 1 75%;
-  ${StyledComponentMedia.giant`
-    flex: none;
-  `};
-`;
-
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled.h2`
   font-family: ${(props) => props.theme.fontBold};
   font-size: ${(props) => props.theme.fontSize.xs};
   color: ${(props) => props.theme.fontColor};

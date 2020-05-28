@@ -1,32 +1,31 @@
-import styled, { css } from "styled-components"
-import StyledComponentMedia from "./mediaQueriesUtils"
+import styled, { css } from 'styled-components';
+import StyledComponentMedia from './mediaQueriesUtils';
 
 export default styled.div`
   display: flex;
-  max-width: 120rem;
-  width: calc(100% - 4rem);
+  max-width: 140rem;
+  width: calc(100% - 2rem);
   margin: auto;
   ${StyledComponentMedia.tablet`
-    width: calc(100% - 6rem);
-  `};
-  ${StyledComponentMedia.desktop`
     width: calc(100% - 8rem);
   `};
-  ${props =>
+  ${StyledComponentMedia.giant`
+    width: calc(100% - 16rem);
+  `};
+  ${(props) =>
     props.header &&
     css`
-      justify-content: space-between;
       align-items: center;
       margin: 0 auto;
-      padding: 2rem 0;
-      ${StyledComponentMedia.handheld`
-      `};
-      ${StyledComponentMedia.phablet`
+      padding: 1.5rem 0;
+      ${StyledComponentMedia.tablet`
+        padding: 2rem 0;
       `};
       ${StyledComponentMedia.desktop`
+        padding: 3rem 0;
       `};
     `};
-  ${props =>
+  ${(props) =>
     props.main &&
     css`
       position: relative;
@@ -34,7 +33,7 @@ export default styled.div`
       align-items: center;
       flex-flow: column nowrap;
     `};
-  ${props =>
+  ${(props) =>
     props.footer &&
     css`
       justify-content: center;
@@ -46,4 +45,4 @@ export default styled.div`
         padding: 3.5rem;
       `};
     `};
-`
+`;

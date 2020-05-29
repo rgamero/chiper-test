@@ -1,15 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import StyledComponentMedia from '../../../../utils/mediaQueriesUtils';
 
 const WrapperStyle = styled.svg`
-  width: 0.8rem;
-  cursor: pointer;
+  width: 4rem;
+  margin-left: 2rem;
   -webkit-tap-highlight-color: transparent;
-
-  ${StyledComponentMedia.tablet`
-    width: 1.75rem;
-  `};
 `;
 
 const ChiperWhatsAppIcon = () => (

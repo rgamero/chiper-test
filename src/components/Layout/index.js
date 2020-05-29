@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
     fontRegular: 'Avenir',
     fontBold: 'Avenir Black',
     fontColor: '#363636',
+    textColor: 'rgba(54,54,54,.6)',
     baseColor: '#f7f4f4',
     baseColorOpacity: 'rgba(247, 244, 244, 0.85)',
     primaryColor: '#ff0136',

@@ -7,13 +7,14 @@ import StyledComponentMedia from '../../../utils/mediaQueriesUtils';
 
 const WrapperImg = styled.figure`
   width: 100%;
+  margin: 0;
 `;
 
 const StyledImg = styled(Img)`
   height: 25rem;
   border-radius: 1rem;
   ${StyledComponentMedia.tablet`
-    height: 35rem;
+    height: 40rem;
   `};
 `;
 

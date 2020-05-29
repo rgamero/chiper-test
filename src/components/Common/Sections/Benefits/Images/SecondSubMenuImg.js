@@ -2,9 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import StyledComponentMedia from '../../../../../utils/mediaQueriesUtils';
 
 const WrapperImg = styled.figure`
   width: 100%;
+  margin: 0;
+  ${StyledComponentMedia.tablet`
+    width: 50%;
+  `};
 `;
 
 const StyledImg = styled(Img)`

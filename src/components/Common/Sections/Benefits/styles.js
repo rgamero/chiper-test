@@ -9,6 +9,7 @@ export const ItemsWrapper = styled.div`
   padding: 5rem 0;
   ${StyledComponentMedia.tablet`
     flex-flow: row nowrap;
+    padding: 3.5rem 0;
   `};
 `;
 
@@ -22,9 +23,13 @@ export const ItemContainer = styled.div`
   width: 100%;
   margin: 1rem 0;
   padding: 3.5rem;
+  ${StyledComponentMedia.tablet`
+    flex-flow: column nowrap;
+    margin: 0 1rem;
+  `};
 `;
 
-export const ItemText = styled.p`
+export const ItemTitle = styled.p`
   font-family: ${(props) => props.theme.fontBold};
   font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: 900;
@@ -34,4 +39,16 @@ export const ItemText = styled.p`
   text-align: center;
   max-width: 75%;
   margin-top: 2rem;
+`;
+
+export const ItemText = styled.p`
+  font-family: ${(props) => props.theme.fontRegular};
+  font-size: ${(props) => props.theme.fontSize.reg};
+  font-weight: 400;
+  color: ${(props) => props.theme.textColor};
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 1rem;
+  width: 75%;
 `;

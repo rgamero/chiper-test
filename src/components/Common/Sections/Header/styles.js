@@ -1,14 +1,15 @@
 import styled from 'styled-components';
-import StyledComponentMedia from '../../../utils/mediaQueriesUtils';
+import StyledComponentMedia from '../../../../utils/mediaQueriesUtils';
 
 export const HeaderWrapper = styled.header`
   display: flex;
   height: 100%;
   width: 100%;
   position: relative;
+  background-color: ${(props) => props.theme.baseColor};
 `;
 
-export const HeaderBg = styled.a`
+export const HeaderBg = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;

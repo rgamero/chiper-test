@@ -1,4 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import StyledComponentMedia from '../../utils/mediaQueriesUtils';
+import pointsBackground from '../../assets/images/pointsBg.png';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -19,7 +21,14 @@ const GlobalStyle = createGlobalStyle`
     font-feature-settings: "kern", "liga", "clig", "calt";
     line-height: 1;
     color: ${(props) => props.theme.fontColor};
-    background-color: ${(props) => props.theme.baseColor};
+    background-image: url(${pointsBackground});
+    background-color: ${(props) => props.theme.baseColorOpacity};
+    background-size: contain;
+    background-blend-mode: multiply;
+    ${StyledComponentMedia.phablet`
+      background-image: none;
+      background-color: ${(props) => props.theme.baseColor};
+    `};
   }
 `;
 

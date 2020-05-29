@@ -4,7 +4,7 @@ import React from 'react';
 import { Media } from '../utils/mediaQueriesUtils';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import Image from '../components/image';
+import MobileLayout from '../components/Mobile';
 
 // const CustomComponent = loadable(
 //   () =>
@@ -17,17 +17,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Media lessThan="sm">
-      <div>Jueputa</div>
+      <MobileLayout />
     </Media>
-    <Media greaterThanOrEqual="sm">
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      ></div>
-    </Media>
+    <Media greaterThanOrEqual="sm"></Media>
   </Layout>
 );
 

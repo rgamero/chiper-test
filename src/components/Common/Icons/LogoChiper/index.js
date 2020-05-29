@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import StyledComponentMedia from '../../../../utils/mediaQueriesUtils';
 
-const Wrapper = styled.figure`
+const WrapperImg = styled.figure`
   margin: 0;
   width: 4rem;
 
@@ -21,7 +21,7 @@ const StyledImg = styled(Img)`
 const LogoChiper = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logoChiper.png" }) {
+      logoChiper: file(relativePath: { eq: "logoChiper.png" }) {
         childImageSharp {
           fluid(maxWidth: 80) {
             ...GatsbyImageSharpFluid
@@ -32,9 +32,12 @@ const LogoChiper = () => {
   `);
 
   return (
-    <Wrapper>
-      <StyledImg fluid={data.placeholderImage.childImageSharp.fluid} />
-    </Wrapper>
+    <WrapperImg>
+      <StyledImg
+        alt="Chiper logo"
+        fluid={data.logoChiper.childImageSharp.fluid}
+      />
+    </WrapperImg>
   );
 };
 

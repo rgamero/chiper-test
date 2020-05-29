@@ -1,16 +1,14 @@
 import React from 'react';
-import Container from '../../../utils/styledContainer';
+import Container from '../../../../utils/styledContainer';
+import { GOOGLE_PLAY } from '../../../../utils/urlConstants';
 import { HeaderWrapper, HeaderBg, HeaderContent, HeaderTitle } from './styles';
-import LogoChiper from '../Icons/LogoChiper';
-import GooglePlay from '../Icons/GooglePlay';
+import LogoChiper from '../../Icons/LogoChiper';
+import GooglePlay from '../../Icons/GooglePlay';
 
 const Header = () => (
   <HeaderWrapper>
     <Container header>
-      <HeaderBg
-        href="https://play.google.com/store/apps/details?id=co.chiper.empresario"
-        target="_blank"
-      >
+      <HeaderBg onClick={() => window.open(GOOGLE_PLAY, '_blank')}>
         <HeaderContent>
           <LogoChiper />
           <HeaderTitle>

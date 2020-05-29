@@ -28,12 +28,12 @@ const GooglePlayIcon = () => (
         y2="71.9074222%"
         id="linearGradient-1"
       >
-        <stop stop-color="#00A0FF" offset="0%"></stop>
-        <stop stop-color="#00A1FF" offset="1%"></stop>
-        <stop stop-color="#00BEFF" offset="26%"></stop>
-        <stop stop-color="#00D2FF" offset="51%"></stop>
-        <stop stop-color="#00DFFF" offset="76%"></stop>
-        <stop stop-color="#00E3FF" offset="100%"></stop>
+        <stop stopColor="#00A0FF" offset="0%"></stop>
+        <stop stopColor="#00A1FF" offset="1%"></stop>
+        <stop stopColor="#00BEFF" offset="26%"></stop>
+        <stop stopColor="#00D2FF" offset="51%"></stop>
+        <stop stopColor="#00DFFF" offset="76%"></stop>
+        <stop stopColor="#00E3FF" offset="100%"></stop>
       </linearGradient>
       <linearGradient
         x1="107.684729%"
@@ -42,10 +42,10 @@ const GooglePlayIcon = () => (
         y2="50%"
         id="linearGradient-2"
       >
-        <stop stop-color="#FFE000" offset="0%"></stop>
-        <stop stop-color="#FFBD00" offset="41%"></stop>
-        <stop stop-color="#FFA500" offset="78%"></stop>
-        <stop stop-color="#FF9C00" offset="100%"></stop>
+        <stop stopColor="#FFE000" offset="0%"></stop>
+        <stop stopColor="#FFBD00" offset="41%"></stop>
+        <stop stopColor="#FFA500" offset="78%"></stop>
+        <stop stopColor="#FF9C00" offset="100%"></stop>
       </linearGradient>
       <linearGradient
         x1="86.219293%"
@@ -54,8 +54,8 @@ const GooglePlayIcon = () => (
         y2="135.987548%"
         id="linearGradient-3"
       >
-        <stop stop-color="#FF3A44" offset="0%"></stop>
-        <stop stop-color="#C31162" offset="100%"></stop>
+        <stop stopColor="#FF3A44" offset="0%"></stop>
+        <stop stopColor="#C31162" offset="100%"></stop>
       </linearGradient>
       <linearGradient
         x1="-18.7537448%"
@@ -64,24 +64,24 @@ const GooglePlayIcon = () => (
         y2="35.0948125%"
         id="linearGradient-4"
       >
-        <stop stop-color="#32A071" offset="0%"></stop>
-        <stop stop-color="#2DA771" offset="7%"></stop>
-        <stop stop-color="#15CF74" offset="48%"></stop>
-        <stop stop-color="#06E775" offset="80%"></stop>
-        <stop stop-color="#00F076" offset="100%"></stop>
+        <stop stopColor="#32A071" offset="0%"></stop>
+        <stop stopColor="#2DA771" offset="7%"></stop>
+        <stop stopColor="#15CF74" offset="48%"></stop>
+        <stop stopColor="#06E775" offset="80%"></stop>
+        <stop stopColor="#00F076" offset="100%"></stop>
       </linearGradient>
     </defs>
     <g
       id="Landing"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="DK_Landing-Col-0.1"
         transform="translate(-1084.000000, -66.000000)"
-        fill-rule="nonzero"
+        fillRule="nonzero"
       >
         <g id="Group-12" transform="translate(1084.000000, 66.000000)">
           <g id="Group-25">

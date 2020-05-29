@@ -14,7 +14,7 @@ const LogoChiperAlt = () => (
     <defs>
       <path id="a" d="M0 .427h99.859v59.069H0z" />
     </defs>
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <g transform="translate(0 .077)">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />

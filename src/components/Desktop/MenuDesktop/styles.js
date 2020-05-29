@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import StyledComponentMedia from '../../../utils/mediaQueriesUtils';
 
 export const MenuWrapper = styled.nav`
   display: flex;
@@ -23,7 +24,7 @@ export const ItemMenu = styled.li`
   position: relative;
   cursor: pointer;
   font-family: ${(props) => props.theme.fontBold};
-  font-size: ${(props) => props.theme.fontSize.md};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -33,7 +34,11 @@ export const ItemMenu = styled.li`
   color: ${(props) => props.theme.fontColor};
   opacity: 0.4;
   transition: opacity 0.3s;
-  margin-right: 6rem;
+  margin-right: 3rem;
+  ${StyledComponentMedia.giant`
+    font-size: ${(props) => props.theme.fontSize.md};
+    margin-right: 6rem;
+  `};
   ${(props) =>
     props.active &&
     css`

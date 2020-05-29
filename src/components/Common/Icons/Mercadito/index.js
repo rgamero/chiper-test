@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
-import styled, { css, ThemeContext } from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
+import StyledComponentMedia from '../../../../utils/mediaQueriesUtils';
 
 const WrapperStyle = styled.svg`
   width: 7.5rem;
-  ${(props) =>
-    props.desktop &&
-    css`
+  ${StyledComponentMedia.phablet`
       position: absolute;
+      top: 3rem;
+  `};
+  ${StyledComponentMedia.desktop`
+      top: 3.5rem;
+  `};
+  ${StyledComponentMedia.giant`
       top: 4rem;
-    `};
+  `};
 `;
 
 const Mercadito = ({ desktop }) => {

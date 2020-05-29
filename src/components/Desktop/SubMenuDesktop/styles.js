@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components';
+import StyledComponentMedia from '../../../utils/mediaQueriesUtils';
 
 export const SectionWrapper = styled.section`
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
   width: 100%;
+  margin-top: 2rem;
 `;
 
 export const InnerWrapper = styled.div`
@@ -29,24 +31,33 @@ export const CardContainer = styled.div`
 
 export const CardTitle = styled.h2`
   font-family: ${(props) => props.theme.fontBold};
-  font-size: ${(props) => props.theme.fontSize.lg};
+  font-size: ${(props) => props.theme.fontSize.md};
   font-weight: 900;
   color: ${(props) => props.theme.fontColor};
   margin-bottom: 3rem;
   line-height: 1.05;
   letter-spacing: -1.2px;
   text-align: left;
+  ${StyledComponentMedia.desktop`
+    font-size: 4rem;
+  `};
+  ${StyledComponentMedia.giant`
+    font-size: ${(props) => props.theme.fontSize.lg};
+  `};
 `;
 
 export const CardText = styled.p`
   font-family: ${(props) => props.theme.fontRegular};
-  font-size: ${(props) => props.theme.fontSize.sm};
+  font-size: ${(props) => props.theme.fontSize.reg};
   font-weight: 400;
   color: ${(props) => props.theme.fontColor};
   line-height: 1.35;
   letter-spacing: -0.8px;
   text-align: left;
   margin-bottom: 0;
+  ${StyledComponentMedia.desktop`
+    font-size: ${(props) => props.theme.fontSize.sm};
+  `};
 `;
 
 export const SubMenu = styled.div`

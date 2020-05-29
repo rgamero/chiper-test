@@ -39,11 +39,17 @@ export const ItemTitle = styled.p`
   text-align: center;
   max-width: 75%;
   margin-top: 2rem;
+  ${StyledComponentMedia.tablet`
+    font-size: ${(props) => props.theme.fontSize.reg};
+  `};
+  ${StyledComponentMedia.desktop`
+    font-size: ${(props) => props.theme.fontSize.sm};
+  `};
 `;
 
 export const ItemText = styled.p`
   font-family: ${(props) => props.theme.fontRegular};
-  font-size: ${(props) => props.theme.fontSize.reg};
+  font-size: ${(props) => props.theme.fontSize.xs};
   font-weight: 400;
   color: ${(props) => props.theme.textColor};
   line-height: 1.3;
@@ -51,4 +57,7 @@ export const ItemText = styled.p`
   text-align: center;
   margin-top: 1rem;
   width: 75%;
+  ${StyledComponentMedia.desktop`
+    font-size: ${(props) => props.theme.fontSize.reg};
+  `};
 `;
